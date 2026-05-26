@@ -348,21 +348,21 @@ This graph helps plan reading such that each paper’s prerequisites have been c
 
 # Hands-on Notebooks & Code
 
-For practical learning, we recommend the following notebooks and libraries (Colab or GitHub):
+For practical learning, recommended the following notebooks and libraries (Colab or GitHub):
 
-- **CNNs (Weeks 1–3):** PyTorch official tutorials on [Image Classification](https://pytorch.org/tutorials/beginner/blitz/cifar10_tutorial.html) and [Transfer Learning](https://pytorch.org/tutorials/beginner/finetuning_torchvision_models_tutorial.html). Keras/TensorFlow CNN tutorial. Implement AlexNet/VGG on CIFAR (tutorial code exists). 
+- **CNNs:** PyTorch official tutorials on [Image Classification](https://pytorch.org/tutorials/beginner/blitz/cifar10_tutorial.html) and [Transfer Learning](https://pytorch.org/tutorials/beginner/finetuning_torchvision_models_tutorial.html). Keras/TensorFlow CNN tutorial. Implement AlexNet/VGG on CIFAR (tutorial code exists). 
 
-- **Object Detection (Weeks 4–5):** [Torchvision Faster R-CNN tutorial](https://pytorch.org/tutorials/intermediate/torchvision_tutorial.html). YOLOv3/YOLOv5 repositories with colab (e.g. [ultralytics/yolov5](https://github.com/ultralytics/yolov5)). 
+- **Object Detection:** [Torchvision Faster R-CNN tutorial](https://pytorch.org/tutorials/intermediate/torchvision_tutorial.html). YOLOv3/YOLOv5 repositories with colab (e.g. [ultralytics/yolov5](https://github.com/ultralytics/yolov5)). 
 
-- **Seq2Seq & Transformer (Weeks 6–7):** [Annotated Transformer](http://nlp.seas.harvard.edu/2018/04/03/attention.html) notebook. Hugging Face’s [seq2seq tutorial](https://huggingface.co/transformers/tasks/translation.html). 
+- **Seq2Seq & Transformer:** [Annotated Transformer](http://nlp.seas.harvard.edu/2018/04/03/attention.html) notebook. Hugging Face’s [seq2seq tutorial](https://huggingface.co/transformers/tasks/translation.html). 
 
-- **ELMo/BERT (Week 8):** [Hugging Face tutorial: Fine-tuning BERT](https://huggingface.co/course/chapter7). AllenNLP ELMo [demo notebook](https://demo.allennlp.org/elmo-embedding).
+- **ELMo/BERT:** [Hugging Face tutorial: Fine-tuning BERT](https://huggingface.co/course/chapter7). AllenNLP ELMo [demo notebook](https://demo.allennlp.org/elmo-embedding).
 
-- **GPT & LLMs (Weeks 9–10):** OpenAI GPT-2 Colab (e.g. [transformers generate text](https://colab.research.google.com/github/huggingface/notebooks/blob/master/examples/language_modeling.ipynb)). EleutherAI GPT-NeoX colab. Using [OpenAI API quickstart](https://platform.openai.com/docs/quickstart) for GPT-3. 
+- **GPT & LLMs:** OpenAI GPT-2 Colab (e.g. [transformers generate text](https://colab.research.google.com/github/huggingface/notebooks/blob/master/examples/language_modeling.ipynb)). EleutherAI GPT-NeoX colab. Using [OpenAI API quickstart](https://platform.openai.com/docs/quickstart) for GPT-3. 
 
-- **CLIP & DALL·E (Week 11):** OpenAI CLIP code [on GitHub](https://github.com/openai/CLIP) (pip install `clip`, use from Python). [DALLE-pytorch](https://github.com/lucidrains/DALLE-pytorch) for DALL·E mini or [minDALL·E colab](https://colab.research.google.com/github/lucidrains/DALLE-pytorch/blob/main/demos/mini_dalle.ipynb).
+- **CLIP & DALL·E:** OpenAI CLIP code [on GitHub](https://github.com/openai/CLIP) (pip install `clip`, use from Python). [DALLE-pytorch](https://github.com/lucidrains/DALLE-pytorch) for DALL·E mini or [minDALL·E colab](https://colab.research.google.com/github/lucidrains/DALLE-pytorch/blob/main/demos/mini_dalle.ipynb).
 
-- **Diffusion Models (Week 12):** [CompVis Stable Diffusion colab](https://github.com/CompVis/stable-diffusion) or Hugging Face [diffusers](https://github.com/huggingface/diffusers) examples. A beginner tutorial: [Latent Diffusion colab](https://colab.research.google.com/github/CompVis/stable-diffusion/blob/main/notebooks/Stable_Diffusion_Tutorial.ipynb).
+- **Diffusion Models:** [CompVis Stable Diffusion colab](https://github.com/CompVis/stable-diffusion) or Hugging Face [diffusers](https://github.com/huggingface/diffusers) examples. A beginner tutorial: [Latent Diffusion colab](https://colab.research.google.com/github/CompVis/stable-diffusion/blob/main/notebooks/Stable_Diffusion_Tutorial.ipynb).
 
 Embed images of architectures: e.g. AlexNet’s 5-conv structure, Transformer block, RoI pooling schema, etc. The above resources often include diagrams. (Citations given for images when used.)
 
@@ -395,20 +395,4 @@ Below is an **annotated bibliography** of the cited papers (with key contributio
 - **2023, LLaMA【163†L55-L61】:** Family of open-trained LMs (7B–65B) using only public data. LLaMA-13B beats GPT-3 175B; LLaMA-65B rivals PaLM. Demonstrated that careful scaling and data usage yield strong results, and release to research community promoted transparency.
 
 Collectively, these papers chart the evolution of deep learning: from specialized neural networks (2012–2014), to unified architectures (2017+), and to ultra-large models (2019+). They underpin modern AI. 
-
-# Notes & Notebook Tips
-
-- **Note Format:** Use a **consistent structure** for each paper: *Citation*, *Summary*, *Key equations/algorithms*, *Datasets/Results*, *Impact*, *Prereqs/Links*. Use headings and bullet lists for clarity. Mark code or math in LaTeX syntax (it will render properly in Markdown).
-
-- **Metadata & Tags:** Label notes by year, domain (CV/NLP/LLM/VLM), and topic. Example tags: `#CV #CNN`, `#NLP #Transformer`, etc. Use a tool like Obsidian or Joplin to allow tag search. Add metadata fields (author, venue) at top of each note.
-
-- **Searchability:** Keep key terms consistent (e.g. always write “ResNet” not “ResidualNet”). Include abstracts and your summary in text for full-text search. Link related notes (e.g. link “Transformer” note from “Attention Is All You Need” note). 
-
-- **Versioning:** For models or code, note version (e.g. “Pytorch 1.8”, “TensorFlow 2.x”). Save code exercises in notebooks with comments.
-
-- **Diagrams:** Sketch architectures (CNN layers, Transformer block) by hand or use tools (e.g. draw.io, mermaid). Embed these in the notebook for visual reference.
-
-- **Final Tips:** Write summaries in your own words after reading the paper. Annotate equations by deriving or implementing them. For each paper, create an example or mini-experiment to cement understanding. Regularly review earlier notes when learning advanced topics (prerequisite graph shows how).
-
-By following this rigorous, hands-on, and well-organized approach, the learner will build a deep understanding of how modern deep learning evolved year by year, and be equipped to read and experiment with the cutting-edge research up to 2026.
 
